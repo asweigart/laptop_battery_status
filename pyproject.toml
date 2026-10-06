@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=77.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "laptop_battery_status"
+version = "0.2.0"
+description = "Reports the battery charge, time remaining, and AC power status on Windows, macOS, and Linux, using only the standard library."
+readme = "README.md"
+requires-python = ">=3.5"
+license = "MIT"
+license-files = ["LICENSE.txt"]
+authors = [{ name = "Al Sweigart", email = "al@inventwithpython.com" }]
+keywords = ["battery", "power", "acpi", "laptop", "charge"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: System :: Hardware",
+    "Topic :: System :: Monitoring",
+]
+
+[project.urls]
+Homepage = "https://github.com/asweigart/laptop_battery_status"
+Source = "https://github.com/asweigart/laptop_battery_status"
+"Bug Tracker" = "https://github.com/asweigart/laptop_battery_status/issues"
+
+[tool.setuptools]
+packages = ["laptop_battery_status"]
+
+# The PEP 561 marker that tells type checkers the inline annotations in this
+# package are meant to be used.
+[tool.setuptools.package-data]
+laptop_battery_status = ["py.typed"]
